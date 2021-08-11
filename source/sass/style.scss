@@ -4,6 +4,9 @@
 // Основные переменные
 @import "global/vars";
 
+//Примеси (миксины)
+@import "global/mixins";
+
 // Базовые параметры страницы
 @import "global/global";
 
@@ -27,7 +30,7 @@
 
 // Страница каталога
 @import "catalog/catalog";
-@import "catalog/add-more-goods.scss";
+@import "catalog/add-more-goods";
 @import "catalog/product";
 @import "catalog/promo";
 

@@ -1,10 +1,4 @@
-.main-nav {
-  margin: 0 -20px;
-}
-
 .main-nav__list {
-  display: none;
-
   @include reset-list ();
 }
 
@@ -15,7 +9,6 @@
 .main-nav__link {
   display: block;
   text-align: center;
-  padding: 20px;
   font-family: $oswald;
   font-weight: 500;
   font-size: 20px;
@@ -29,4 +22,3 @@
     opacity: 0.3;
   }
 }
-

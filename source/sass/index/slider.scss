@@ -12,7 +12,6 @@
 
 .slider-controls {
   margin-top: 30px;
-  padding: 2px;
 }
 
 .slider-controls__before,
@@ -25,18 +24,17 @@
   cursor: pointer;
   user-select: none;
 
-    &:hover {
-      border-bottom-style: solid;
-      color: $green;
-    }
+  &:hover {
+    border-bottom-style: solid;
+    color: $green;
+  }
 
-    &:active {
-      border-bottom: 0;
-    }
+  &:active {
+    border-bottom: 0;
+  }
 }
 
 .slider__toggle {
-  padding: 4px 6px;
   width: 85px;
   height: 14px;
   border-radius: 6px;
@@ -53,4 +51,3 @@
   background-color: $green;
   cursor: pointer;
 }
-

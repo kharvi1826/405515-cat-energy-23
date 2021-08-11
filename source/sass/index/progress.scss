@@ -1,16 +1,10 @@
 .progress {
   margin: 0;
   position: relative;
-
-  & + & {
-    margin-left: 32px;
-  }
 }
 
 .progress__title {
-  padding: 0 16px;
   position: relative;
-  bottom: 9px;
   font-family: $arial;
   font-size: 12px;
   line-height: 1;

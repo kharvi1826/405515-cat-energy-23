@@ -1,35 +1,28 @@
 .page-header {
   position: relative;
 
-    &--index {
-      z-index: 0;
+  &--index {
+    z-index: 0;
 
-      &::before {
-        position: absolute;
-        content: "";
-        top: 0;
-        right: 0;
-        left: 0;
-        margin: 0 auto;
-        background-color: #63a73a;
-        background-image: url("../img/index-can-mobile1.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        z-index: -1;
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      right: 0;
+      left: 0;
+      margin: 0 auto;
+      background-color: #63a73a;
+      background-image: url("../img/index-can-mobile1.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      z-index: -1;
     }
   }
 }
 
-.page-header__wrapper {
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
 .page-header__logo {
   position: relative;
-  padding-top: 10px;
-  padding-bottom: 10px;
   height: 45px;
   box-sizing: content-box;
 
@@ -40,13 +33,4 @@
   &:active {
     opacity: 0.6;
   }
-}
-
-.page-header__logo-title {
-  margin: auto;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
 }

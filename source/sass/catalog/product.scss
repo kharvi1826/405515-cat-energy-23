@@ -34,7 +34,6 @@
   color: $darkgrey;
 
   & td {
-    padding: 0;
     font-size: 12px;
     line-height: 16px;
   }
@@ -42,8 +41,9 @@
   & td:last-child {
     text-align: right;
   }
+
   & tr {
-      border-bottom: 1px solid $border-grey;
+    border-bottom: 1px solid $border-grey;
   }
 }
 

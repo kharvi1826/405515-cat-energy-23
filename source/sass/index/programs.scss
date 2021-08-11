@@ -1,6 +1,7 @@
 .programs__list {
   @include reset-list;
 }
+
 .programs__item {
   margin-bottom: 20px;
   padding: 20px 20px 0;
@@ -14,7 +15,6 @@
 
 .program__title {
   margin: 0;
-  padding: 4px 2px;
   font-size: 24px;
   line-height: 50px;
   font-weight: normal;
@@ -32,7 +32,6 @@
 
 .program__link {
   padding: 20px 0;
-  margin-bottom: 1px;
   text-decoration: none;
   color: $black;
   text-transform: uppercase;
