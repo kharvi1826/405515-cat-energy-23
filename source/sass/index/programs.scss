@@ -1,0 +1,86 @@
+.programs__list {
+  @include reset-list;
+}
+.programs__item {
+  margin-bottom: 20px;
+  padding: 20px 20px 0;
+  background-color: $grey;
+  overflow: hidden;
+
+  &:last-child {
+    margin-bottom: 9px;
+  }
+}
+
+.program__title {
+  margin: 0;
+  padding: 4px 2px;
+  font-size: 24px;
+  line-height: 50px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.program__text {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0;
+  padding: 20px 0;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.program__link {
+  padding: 20px 0;
+  margin-bottom: 1px;
+  text-decoration: none;
+  color: $black;
+  text-transform: uppercase;
+  border-left: 0;
+
+  &::before,
+  &::after {
+    display: block;
+    content: "";
+  }
+
+  &::before {
+    order: 1;
+    margin-left: 10px;
+    width: 19px;
+    height: 3px;
+    background-color: $darkgrey;
+  }
+
+  &::after {
+    order: 2;
+    border: 5.5px solid transparent;
+    border-left-color: $darkgrey;
+  }
+
+  &:hover::before {
+    width: 27px;
+    background-color: $green;
+  }
+
+  &:hover::after {
+    border-left-color: $green;
+  }
+
+  &:hover {
+    color: $green;
+  }
+
+  &:active {
+    opacity: 0.3;
+    transition: none;
+  }
+
+  &:active::before {
+    background-color: $green;
+  }
+
+  &:active::after {
+    border-left-color: $green;
+  }
+}

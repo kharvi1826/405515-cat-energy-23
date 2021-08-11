@@ -1,0 +1,28 @@
+.social {
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.social__list {
+  @include reset-list;
+}
+
+.social__item {
+  margin: 0 18px;
+  width: 21px;
+}
+
+.social__link {
+  display: inline-block;
+  font-size: 0;
+  line-height: 0;
+
+  &:hover {
+    color: $green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+}

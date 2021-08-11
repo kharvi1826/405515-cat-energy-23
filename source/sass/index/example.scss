@@ -1,0 +1,31 @@
+.example {
+  padding-top: 10px;
+  background-color: $grey;
+}
+
+.example__title {
+  padding: 20px 0;
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.example__text {
+  padding-right: 5px;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+
+}
+
+.example__progress {
+  padding: 10px 0;
+}
+
+.example__costs {
+  margin-top: 0;
+  margin-bottom: 35px;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}

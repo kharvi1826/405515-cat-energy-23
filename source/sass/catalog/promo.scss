@@ -1,0 +1,17 @@
+.promo {
+  padding: 15px 0 30px;
+  background-image: url("../img/gift-photo-mobile1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 634px;
+  margin: 0 auto;
+}
+
+.promo__text {
+  margin: 15px 0;
+  text-align: center;
+  font-family: $arial;
+  line-height: 18px;
+  color: #ffffff;
+}
