@@ -1,0 +1,41 @@
+.button {
+  display: block;
+  min-height: 40px;
+  min-width: 248px;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 10px 20px;
+  color: #ffffff;
+  line-height: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  background-color: $green;
+  border: none;
+
+  &:hover {
+    background-color: #5eaa2f;
+    color: #ffff00;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &--grey {
+    color: #000000;
+    background-color: $grey;
+    max-width: 480px;
+    min-width: 280px;
+    margin: 0 auto;
+    width: 100%;
+
+    &:hover {
+      background-color: #ebebeb;
+      color: $green;
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+    }
+  }
+}

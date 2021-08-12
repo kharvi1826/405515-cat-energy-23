@@ -4,13 +4,17 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи - Форма подбора программы</title>
+  <link rel="preload" href="fonts/oswaldregular.woff2">
+  <link rel="preload" href="fonts/oswaldmedium.woff2">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css.map">
 </head>
 
 <body class="page__body">
   <header class="page-header">
     <div class="page-header__wrapper">
       <a class="page-header__logo" href="#">
-        <img src="" width="33" height="38" alt="Логотип сайта Кэт энерджи">
+        <img src="img/logo-mobile.png" width="33" height="38" alt="Логотип сайта Кэт энерджи">
       </a>
       <a class="page-header__logo-title" href="#">
         <img src="" width="101" height="18" alt="Надпись Cat energy">
@@ -88,7 +92,7 @@
           </ul>
         </fieldset>
         <fieldset class="form-section form-section--contacts">
-          <h3 class="form-section__title">Контактные данные (владельца кота)</h3>
+          <h3 class="form-section__title"><span>Контактные данные (владельца кота)</span></h3>
           <div class="form-section__field">
             <label class="form-section__item">
               <span class="form-section__text">E-mail:*</span>
@@ -156,19 +160,21 @@
     <div class="page-footer__wrapper">
       <div class="page-footer__contacts contacts">
         <h2 class="visually-hidden">Контакты</h2>
-        <div class="contacts__address">
-          <p>Приглашаем к сотрудничеству дилеров!</p>
-          <p>ул. Большая
+        <div class="contacts__text-wrapper contacts__text-wrapper--white">
+          <p class="contacts__greeting">Приглашаем к сотрудничеству дилеров!</p>
+          <p class="contacts__address">ул. Большая
             Конюшенная, д. 19/8
-            Санкт-Петербург</p>
+            <span class="contacts__city">Санкт-Петербург</span>
+          </p>
         </div>
-        <div class="contacts__map">
-          <!--тут будет карта-->
+        <div class="contacts__map" id="map" aria-label="map">
         </div>
       </div>
-      <a class="page-footer__logo-title" href="#">
-        <img src="" width="101" height="18" alt="Надпись Кэт энерджи">
-      </a>
+      <div class="page-footer__logo">
+        <a class="page-footer__logo-link" href="#">
+          <img src="img/logo 2.svg" width="101" height="18" alt="Надпись Кэт энерджи">
+        </a>
+      </div>
       <div class="page-footer__social social">
         <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="social__list">
@@ -195,7 +201,7 @@
           HTML Academy
         </a>
         <a class="copyright__link" href="https://htmlacademy.ru">
-          <img src="" width="27" height="34" alt="Логотип HTML Academy">
+          <img class="copyright__logo" src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
         </a>
       </div>
     </div>

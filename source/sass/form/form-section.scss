@@ -1,0 +1,102 @@
+.form-section {
+  border: none;
+  margin: 0;
+  padding: 0;
+
+  &--choose-program {
+    outline: 1px solid $border-grey;
+  }
+}
+
+.form-section__title {
+  position: relative;
+  font-size: 24px;
+  line-height: 1;
+  font-weight: normal;
+  background-image: linear-gradient(to bottom, transparent 0, transparent 13px, $green 13px, $green 16px, transparent 16px, transparent 100%);
+
+  span {
+    display: inline-block;
+    background-color: #ffffff;
+  }
+
+  &--extra {
+    margin-bottom: 40px;
+  }
+}
+
+.form-section__field {
+  margin: 14px 0;
+
+  &--textarea {
+    width: auto;
+  }
+}
+
+.form-section__item {
+  max-width: 100%;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #222222;
+  margin: 0;
+}
+
+.form-section__text,
+.form-section__input,
+.form-section__input::placeholder {
+  font-family: $oswald;
+  line-height: 1.12;
+  text-transform: uppercase;
+}
+
+.form-section__text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.form-section__input {
+  display: inline-block;
+  height: 45px;
+  min-width: 177px;
+  color: $darkgrey;
+  border: 1px solid $border-grey;
+  outline: none;
+
+  &:hover {
+    //border-color: #bababa;
+    border-color: $green;
+  }
+
+  &:active,
+  &:focus {
+    border-color: $darkgrey;
+    box-shadow: inset 0 0 0 1px $darkgrey;
+  }
+
+  &:active:invalid,
+  &:focus:invalid,
+  &.invalid {
+    border-color: $red;
+    box-shadow: inset 0 0 0 1px $red;
+  }
+
+  &--textarea {
+    height: 150px;
+    resize: none;
+    font-family: $oswald;
+  }
+}
+
+.form-section__list {
+  @include reset-list;
+}
+
+.form-section__list-item {
+  margin: 12px 0;
+}

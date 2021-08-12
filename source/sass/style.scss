@@ -1,1 +1,39 @@
-// Начните писать стили здесь
+// Подключает шрифты
+@import "global/fonts";
+
+// Основные переменные
+@import "global/vars";
+
+//Примеси (миксины)
+@import "global/mixins";
+
+// Базовые параметры страницы
+@import "global/global";
+
+// Общие блоки
+@import "common/page-header";
+@import "common/page-footer";
+@import "common/main-nav";
+@import "common/toggle";
+@import "common/button";
+@import "common/contacts";
+@import "common/copyright";
+@import "common/social";
+
+// Главная страница
+@import "index/progress";
+@import "index/example";
+@import "index/features";
+@import "index/programs";
+@import "index/intro";
+@import "index/slider";
+
+// Страница каталога
+@import "catalog/catalog";
+@import "catalog/add-more-goods";
+@import "catalog/product";
+@import "catalog/promo";
+
+// Страница заказа (Страница формы)
+@import "form/program-form";
+@import "form/form-section";
