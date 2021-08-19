@@ -1,28 +1,29 @@
 .button {
   display: block;
   min-height: 40px;
-  min-width: 248px;
-  box-sizing: border-box;
   text-align: center;
   padding: 10px 20px;
-  color: #ffffff;
+  color: $white;
   line-height: 20px;
-  font-weight: 400;
-  font-size: 16px;
   background-color: $green;
-  border: none;
+  min-width: 260px;
+  box-sizing: border-box;
+  font-weight: 400;
 
   &:hover {
-    background-color: #5eaa2f;
-    color: #ffff00;
+    background-color: $dark-green;
   }
 
   &:active {
     color: rgba(255, 255, 255, 0.3);
   }
 
+  @media (min-width:$desktop-width) {
+    min-width: 169px;
+  }
+
   &--grey {
-    color: #000000;
+    color: $black;
     background-color: $grey;
     max-width: 480px;
     min-width: 280px;
@@ -30,12 +31,20 @@
     width: 100%;
 
     &:hover {
-      background-color: #ebebeb;
+      background-color: $light-grey;
       color: $green;
     }
 
     &:active {
       color: rgba(0, 0, 0, 0.3);
+    }
+
+    @media (min-width:$tablet-width) {
+      min-width: 248px;
+    }
+
+    @media (min-width:$desktop-width) {
+      min-width: 169px;
     }
   }
 }
