@@ -1,33 +1,99 @@
 .intro {
-  background-image: linear-gradient(to top, #ffffff 97px, transparent 97px),
-    url("../img/index-background-cat.jpg"),
-    linear-gradient(to top, #ffffff 197px, #61a63c 197px);
+  background-image: url("../img/index-can-mobile1.jpg");
   background-repeat: no-repeat;
   background-position: top;
-  background-color: #61a63c;
+  background-color: $green;
   background-size: 100%;
+
+  @media (min-width:$tablet-width) {
+    background: $white;
+  }
+
+  @media (min-width:$desktop-width) {
+    background: transparent;
+    min-height: 499px;
+  }
 }
 
 .intro__wrapper {
   position: relative;
-  padding-bottom: 22px;
   text-align: center;
-  color: #ffffff;
+  color: $white;
+
+  @media (min-width:$tablet-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 20px;
+    text-align: left;
+    color: $black;
+  }
+}
+
+.intro__content {
+  @media (min-width:$tablet-width) {
+    margin-left: 100px;
+  }
 }
 
 .intro__title {
   font-size: 36px;
   font-weight: 500;
+
+  @media (min-width:$tablet-width) {
+    padding: 35px 0;
+    font-size: 60px;
+  }
+
+  @media (min-width:$desktop-width) {
+    margin-top: 34px;
+    padding-top: 50px;
+  }
 }
 
-.intro__lead {
-  margin-top: 5px;
+.intro__text {
   margin-bottom: 28px;
   font-size: 14px;
   text-transform: uppercase;
+
+  @media (min-width:$tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    padding-bottom: 15px;
+  }
+
+  @media (min-width:$desktop-width) {
+    padding-bottom: 25px;
+  }
 }
 
-.intro-link {
+.intro__img {
+  margin: 0 auto;
+  height: auto;
+
+  @media (min-width:$tablet-width) {
+    width: 709px;
+    height: 609px;
+  }
+
+  @media (min-width:$desktop-width) {
+    position: absolute;
+    top: 0;
+    left: 490px;
+    width: 552px;
+    height: 499px;
+  }
+}
+
+.intro__link {
   order: 1;
   font-size: 14px;
+  width: 280px;
+  height: 40px;
+
+  @media (min-width:$tablet-width) {
+    font-size: 20px;
+    z-index: 2;
+    margin-left: 100px;
+  }
 }
