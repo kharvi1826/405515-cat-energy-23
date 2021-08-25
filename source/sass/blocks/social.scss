@@ -1,0 +1,23 @@
+.social {
+  border-top: 1px solid $light-grey;
+  border-bottom: 1px solid $light-grey;
+
+  @media (min-width:$tablet-width) {
+    border: none;
+  }
+}
+
+.social__list {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 63px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  @include reset-list;
+}
+
+.social__item {
+  width: 54px;
+}

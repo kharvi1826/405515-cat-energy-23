@@ -1,0 +1,18 @@
+.page-header__toggle {
+  position: relative;
+  cursor: pointer;
+  padding: 0;
+  background-color: $white;
+  border: none;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: -10px;
+    right: 10px;
+    width: 24px;
+    height: 20px;
+    background-image: url("../img/logo-toggle.svg");
+    background-repeat: no-repeat;
+  }
+}

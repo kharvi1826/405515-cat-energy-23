@@ -1,14 +1,10 @@
-.copyright {
-  box-sizing: content-box;
-}
-
 .copyright__link {
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-family: "Arial", sans-serif;
   text-decoration: none;
-  color: $darkgrey;
+  color: $special-dark-grey;
   text-transform: none;
 
   &:hover .copyright__logo {
@@ -23,4 +19,5 @@
 .copyright__logo {
   width: 27px;
   height: 34px;
+  justify-self: flex-end;
 }

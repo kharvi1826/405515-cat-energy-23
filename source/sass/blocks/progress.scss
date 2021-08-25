@@ -3,17 +3,6 @@
   flex-direction: column-reverse;
   align-items: center;
   margin: 0;
-  flex-grow: 1;
-  position: relative;
-
-    @media (min-width:$tablet-width) {
-      margin-left: 42px;
-    }
-
-    @media (min-width:$desktop-width) {
-      flex-grow: 0;
-    }
-  }
 }
 
 .progress__title {
@@ -25,17 +14,8 @@
   line-height: 1;
   text-align: center;
   text-transform: lowercase;
-  color: $darkgrey;
+  color: $special-dark-grey;
   background-color: $grey;
-
-  @media (min-width:$tablet-width) {
-    font-size: 14px;
-    background-color: $white;
-  }
-
-  @media (min-width:$desktop-width) {
-    background-color: $grey;
-  }
 }
 
 .progress__value {
@@ -47,11 +27,4 @@
   text-transform: uppercase;
   border: 1px solid $border-grey;
   border-radius: 3px;
-
-  @media (min-width:$tablet-width) {
-    padding-bottom: 20px;
-    min-width: 162px;
-    font-size: 30px;
-    line-height: 1.23;
-  }
 }

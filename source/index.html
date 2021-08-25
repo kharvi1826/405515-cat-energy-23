@@ -12,20 +12,19 @@
 </head>
 
 <body class="page__body">
-  <header class="page-header page-header--index">
+  <header class="page-header">
     <div class="page-header__wrapper container">
       <a class="page-header__logo" href="#">
         <img src="img/logo-mobile.png" width="33" height="38" alt="Логотип сайта Кэт энерджи">
       </a>
       <a class="page-header__logo-title" href="#">
-        <img src="" width="101" height="18" alt="Надпись Cat energy">
+        <img src="img/logo 2.svg" width="101" height="18" alt="Надпись Cat energy">
       </a>
+      <button class="page-header__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
       <nav class="main-nav">
-        <button class="main-nav__toggle toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-          <span class="toggle_button"></span>
-        </button>
-        <ul class="main-nav__list main-nav__list--index">
+        <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__link main-nav__link--current" href="#">Главная</a>
           </li>
@@ -45,15 +44,15 @@
       <div class="intro__wrapper container">
         <h2 class="intro__content intro__title">Функциональное питание для котов</h2>
         <p class="intro__content intro__lead">Занялся собой? Займись котом!</p>
-        <img class="intro-img" src="img/index-can-mobile1.jpg" alt="Упаковка основного продукта" width="280"
+        <img class="intro__img" src="img/index-can-mobile1.png" alt="Упаковка основного продукта" width="280"
           height="270">
         <a class="intro__content intro__link button" href="form.html">Подобрать программу</a>
       </div>
     </section>
     <section class="programs">
       <h2 class="visually-hidden">Программы фитнесс-питания</h2>
-      <div class="programs__wrapper container">
-        <ul class="programs-list">
+      <div class="programs__wrapper">
+        <ul class="programs__list">
           <li class="programs__item program program--slim">
             <h3 class="program__title">Похудение</h3>
             <p class="program__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на
@@ -138,10 +137,9 @@
   </main>
 
   <footer class="page-footer">
-    <div class="page-footer__wrapper">
       <div class="page-footer__contacts contacts">
         <h2 class="visually-hidden">Контакты</h2>
-        <div class="contacts__text-wrapper contacts__text-wrapper--white">
+        <div class="contacts__text-wrapper container contacts__text-wrapper--white">
           <p class="contacts__greeting">Приглашаем к сотрудничеству дилеров!</p>
           <p class="contacts__address">ул. Большая
             Конюшенная, д. 19/8
@@ -151,6 +149,7 @@
         <div class="contacts__map" id="map" aria-label="map">
         </div>
       </div>
+      <div class="page-footer__bottom container">
       <div class="page-footer__logo">
         <a class="page-footer__logo-title" href="#">
           <img class="page-header__logo-img" src="img/logo 2.svg" width="101" height="18" alt="Надпись Кэт энерджи">
@@ -181,7 +180,7 @@
         <a class="copyright__link" href="https://htmlacademy.ru">
           HTML Academy
         </a>
-        <a class="copyright__link" href="https://htmlacademy.ru">
+        <a href="https://htmlacademy.ru">
           <img class="copyright__logo" src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
         </a>
       </div>

@@ -38,7 +38,6 @@
   top: 0;
   bottom: 0;
   width: 100%;
-  overflow: hidden;
 
   &--slim-cat {
     display: flex;
@@ -64,7 +63,6 @@
   @media (min-width:$desktop-width) {
     &--fat-cat {
       width: 750px;
-      overflow: visible;
     }
   }
 

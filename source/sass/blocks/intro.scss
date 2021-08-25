@@ -1,0 +1,32 @@
+.intro {
+  background-image: url("../img/index-background-mobile1.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-color: $green;
+  background-size: 100%;
+  min-height: 480px;
+}
+
+.intro__wrapper {
+  position: relative;
+  text-align: center;
+  color: $white;
+}
+
+.intro__title {
+  font-size: 36px;
+  line-height: 36px;
+  color: $white;
+  font-weight: 400;
+  margin: 0 auto 25px;
+  padding-top: 25px;
+  text-transform: none;
+}
+
+.intro__lead {
+  margin: 0;
+  line-height: 18px;
+  color: $white;
+  padding-bottom: 26px;
+  text-transform: uppercase;
+}

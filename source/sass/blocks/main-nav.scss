@@ -1,29 +1,13 @@
 .main-nav {
+  width: 100%;
   border-top: 1px solid $light-grey;
-
-  @media (min-width:$tablet-width) {
-   border-top: none;
-  }
 }
 .main-nav__list {
   @include reset-list ();
-
-  @media (min-width:$tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  @media (min-width:$desktop-width) {
-    flex-basis: 570px;
-    justify-content: flex-end;
-  }
 }
 
 .main-nav__item {
   border-bottom: 1px solid $light-grey;
-
-  @media (min-width:$tablet-width) {
-    border-bottom: none;
-   }
 }
 
 .main-nav__link {

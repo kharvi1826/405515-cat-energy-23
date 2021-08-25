@@ -64,7 +64,7 @@
   display: inline-block;
   height: 45px;
   min-width: 177px;
-  color: $darkgrey;
+  color: $special-dark-grey;
   border: 1px solid $border-grey;
   outline: none;
 
@@ -75,15 +75,8 @@
 
   &:active,
   &:focus {
-    border-color: $darkgrey;
-    box-shadow: inset 0 0 0 1px $darkgrey;
-  }
-
-  &:active:invalid,
-  &:focus:invalid,
-  &.invalid {
-    border-color: $red;
-    box-shadow: inset 0 0 0 1px $red;
+    border-color: $special-dark-grey;
+    box-shadow: inset 0 0 0 1px $special-dark-grey;
   }
 
   &--textarea {

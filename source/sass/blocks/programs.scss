@@ -1,15 +1,18 @@
-.program {
-  @media (min-width:$tablet-width) {
-    padding-top: 40px;
-  }
+.programs {
+  width: 280px;
+  margin: 0 auto;
 }
 
 .programs__wrapper {
-  @media (min-width:$tablet-width) {
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-  }
+  display: flex;
+  box-sizing: border-box;
+  margin: 20px auto;
+  background-color: $basic-grey;
+}
+
+.programs__list {
+  @include reset-list;
+  background-color: $white;
 }
 
 .programs__item {
@@ -17,16 +20,6 @@
   padding: 20px 20px 0;
   background-color: $grey;
   overflow: hidden;
-
-  @media (min-width:$tablet-width) {
-    position: relative;
-    margin-bottom: 30px;
-    padding: 55px 285px 40px 50px;
-
-    &--pro {
-      padding-right: 315px;
-    }
-  }
 }
 
 .program__title {
@@ -38,34 +31,16 @@
   line-height: 50px;
   font-weight: normal;
   text-transform: uppercase;
-
-  @media (min-width:$tablet-width) {
-    padding: 20px 0;
-    font-size: 36px;
-    line-height: 1;
-  }
 }
 
 .program__text {
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
+  color: $special-dark-grey;
   margin: 0;
   padding: 20px 0;
   border-bottom: 1px solid $border-grey;
-
-  @media (min-width:$tablet-width) {
-    font-size: 16px;
-    line-height: 1.5;
-    padding-top: 5px;
-    padding-bottom: 35px;
-    border-bottom: 0;
-  }
-
-  @media (min-width:$desktop-width) {
-    padding-top: 18px;
-    padding-bottom: 18px;
-  }
 }
 
 .program__link {
@@ -88,13 +63,13 @@
     margin-left: 10px;
     width: 19px;
     height: 3px;
-    background-color: $darkgrey;
+    background-color: $black;
   }
 
   &::after {
     order: 2;
     border: 5.5px solid transparent;
-    border-left-color: $darkgrey;
+    border-left-color: $black;
   }
 
   &:hover::before {
@@ -120,20 +95,5 @@
 
   &:active::after {
     border-left-color: $green;
-  }
-
-  @media (min-width:$tablet-width) {
-    display: inline-flex;
-    font-size: 20px;
-    border: 0;
-
-    &::before {
-      margin-left: 25px;
-    }
-  }
-
-  @media (min-width:$desktop-width) {
-    padding: 11px 0;
-    margin-bottom: 27px;
   }
 }

@@ -45,12 +45,14 @@ li {
   min-width: 320px;
   box-sizing: border-box;
 
-   @media (min-width:$tablet-width) {
+  @media (min-width:$tablet-width) {
     padding: 0 30px;
+    min-width: 768px;
   }
 
-   @media (min-width:$desktop-width) {
+  @media (min-width:$desktop-width) {
     padding: 0 40px;
+    min-width: 1440px;
   }
 }
 

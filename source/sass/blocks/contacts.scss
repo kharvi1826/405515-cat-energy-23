@@ -95,7 +95,7 @@
   background-image: url("../img/map-mobile.png");
   background-repeat: no-repeat, no-repeat;
   background-position: center 51%, center;
-  background-size: 62px, cover;
+  background-size: cover;
 
   @media (min-width:$tablet-width) {
     height: 395px;
