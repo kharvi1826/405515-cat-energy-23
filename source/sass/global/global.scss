@@ -42,7 +42,7 @@ li {
 .container {
   margin: 0 auto;
   padding: 0 20px;
-  min-width: 320px;
+  width: 320px;
   box-sizing: border-box;
 
   @media (min-width:$tablet-width) {

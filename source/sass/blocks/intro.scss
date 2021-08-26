@@ -2,13 +2,11 @@
   background-image: url("../img/index-background-mobile1.jpg");
   background-repeat: no-repeat;
   background-position: top;
-  background-color: $green;
-  background-size: 100%;
+  background-size: 320px 302px;
   min-height: 480px;
 }
 
 .intro__wrapper {
-  position: relative;
   text-align: center;
   color: $white;
 }

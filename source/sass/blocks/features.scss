@@ -1,5 +1,4 @@
 .features {
-  width: 320px;
   margin: 0 auto;
 }
 
@@ -9,7 +8,7 @@
 
 .features__title {
   margin: 0;
-  font-family: "Oswald";
+  font-family: $oswald;
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
@@ -26,7 +25,7 @@
   margin: 20px 0;
 }
 
-.features__text {
+.feature__text {
   margin: 0;
   line-height: 18px;
   font-family: "Arial", sans-serif;

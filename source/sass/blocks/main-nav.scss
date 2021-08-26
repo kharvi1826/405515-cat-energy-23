@@ -1,13 +1,15 @@
 .main-nav {
-  width: 100%;
+  width: 320px;
   border-top: 1px solid $light-grey;
 }
+
 .main-nav__list {
   @include reset-list ();
 }
 
 .main-nav__item {
   border-bottom: 1px solid $light-grey;
+  width: 320px;
 }
 
 .main-nav__link {
@@ -26,17 +28,21 @@
   &:active {
     opacity: 0.3;
   }
+
   @media (min-width:$tablet-width) {
     font-size: 18px;
     line-height: 1.38;
   }
+
   &--current {
     border-bottom: 2px solid $green;
   }
+
   @media (min-width:$desktop-width) {
     font-size: 20px;
     line-height: 1.24;
   }
+
   @media (min-width:$desktop-width) {
     .main-nav__list--index .main-nav__link {
       color: $white;
