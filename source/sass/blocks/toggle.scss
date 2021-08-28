@@ -15,4 +15,8 @@
     background-image: url("../img/logo-toggle.svg");
     background-repeat: no-repeat;
   }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

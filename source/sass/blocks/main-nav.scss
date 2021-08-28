@@ -1,15 +1,24 @@
 .main-nav {
-  width: 320px;
   border-top: 1px solid $light-grey;
+
+  @media (min-width: $tablet-width) {
+    border-top: none;
 }
 
 .main-nav__list {
   @include reset-list ();
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .main-nav__item {
   border-bottom: 1px solid $light-grey;
-  width: 320px;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+  }
 }
 
 .main-nav__link {
@@ -31,7 +40,7 @@
 
   @media (min-width:$tablet-width) {
     font-size: 18px;
-    line-height: 1.38;
+    line-height: 24px;
   }
 
   &--current {
@@ -52,4 +61,6 @@
       }
     }
   }
+}
+}
 }

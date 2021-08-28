@@ -1,18 +1,53 @@
 .example {
   margin: 0 auto;
   background-color: $grey;
+
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+    border-top: 1px solid $light-grey;
+  }
 }
 
 .example__title {
   padding: 20px 0;
   font-size: 36px;
   font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    padding: 35px 0;
+    font-size: 60px;
+  }
 }
 
 .example__text {
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    padding-right: 20px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+}
+
+.example__data {
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+}
+
+.example__progress {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 10px 0;
 }
 
 .example__costs {
@@ -22,4 +57,19 @@
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 15px;
+    margin-bottom: 0;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: right;
+  }
+}
+
+.example__costs-amount {
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }

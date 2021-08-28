@@ -87,7 +87,7 @@
 }
 
 .form-section__list {
-  @include reset-list;
+  @include reset-list ();
 }
 
 .form-section__list-item {

@@ -13,7 +13,8 @@
 }
 
 .add-more-goods__list {
-  @include reset-list;
+
+  @include reset-list ();
   margin-bottom: 39px;
 }
 

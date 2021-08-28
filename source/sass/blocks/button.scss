@@ -18,8 +18,12 @@
     color: rgba(255, 255, 255, 0.3);
   }
 
-  @media (min-width:$desktop-width) {
-    min-width: 169px;
+  @media (min-width:$tablet-width) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 244px;
+    height: 54px;
   }
 
   &--grey {

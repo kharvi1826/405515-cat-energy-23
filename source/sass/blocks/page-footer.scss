@@ -2,6 +2,18 @@
   background-color: $grey;
 }
 
+.page-footer__bottom {
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 49px;
+    padding-bottom: 47px;
+    min-height: 150px;
+  }
+}
+
 .page-footer__logo,
 .page-footer__social,
 .page-footer__copyright {
@@ -22,6 +34,18 @@
 
   &:active {
     opacity: 0.6;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin-right: 30px;
+  }
+}
+
+.page-footer__logo-title {
+
+  @media (min-width: $tablet-width) {
+  border-bottom: none;
   }
 }
 
