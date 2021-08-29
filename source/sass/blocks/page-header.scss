@@ -10,15 +10,18 @@
 
 .page-header__wrapper {
   padding-top: 10px;
-  margin: 0 auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  box-sizing: border-box;
+}
+
+.page-header--index {
 
   @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    padding: 0 30px;
     flex-direction: column;
     padding-top: 20px;
     padding-bottom: 20px;

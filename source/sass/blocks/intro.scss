@@ -12,16 +12,23 @@
 }
 
 .intro__wrapper {
+  padding-bottom: 22px;
   text-align: center;
   color: $white;
 
   @media (min-width: $tablet-width) {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0 20px;
+    padding: 0 30px;
     text-align: left;
-    color: $black;
+  }
+}
+
+.intro__content {
+  @media (min-width: $tablet-width) {
+    margin-left: 100px;
   }
 }
 
@@ -37,6 +44,8 @@
   @media (min-width: $tablet-width) {
     padding: 35px 0;
     font-size: 60px;
+    color: $black;
+    padding: 0 20px;
   }
 }
 
@@ -51,5 +60,7 @@
     font-size: 20px;
     line-height: 22px;
     padding-bottom: 15px;
+    color: $black;
+    padding: 0 20px;
   }
 }

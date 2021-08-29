@@ -13,9 +13,10 @@
 
 <body class="page__body">
   <header class="page-header">
-    <div class="page-header__wrapper">
+    <div class="page-header__wrapper container">
       <a class="page-header__logo" href="#">
-        <img class="page-header__logo-img" src="img/logo-mobile.png" width="33" height="38" alt="Логотип сайта Кэт энерджи">
+        <img class="page-header__logo-img" src="img/logo-mobile.png" width="33" height="38"
+          alt="Логотип сайта Кэт энерджи">
       </a>
       <a class="page-header__logo-title" href="#">
         <img src="img/logo 2.svg" width="101" height="18" alt="Надпись Cat energy">
@@ -23,6 +24,8 @@
       <button class="page-header__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
+    </div>
+    <div class="page-header--index">
       <nav class="main-nav">
         <ul class="main-nav__list">
           <li class="main-nav__item">
@@ -120,7 +123,8 @@
           <input type="radio" id="fat-cat" class="slider__fat-cat visually-hidden" name="image-toggle">
           <input type="radio" id="slim-cat" class="slider__slim-cat visually-hidden" name="image-toggle">
           <div class="slider__images">
-            <img class="slider__image slider__image--fat-cat" src="img/before-mobile1.png" width="311" height="232" alt="Толстый кот">
+            <img class="slider__image slider__image--fat-cat" src="img/before-mobile1.png" width="311" height="232"
+              alt="Толстый кот">
             <img class="slider__image slider__image--slim-cat" src="" width="311" height="232" alt="Стройный кот">
           </div>
           <div class="slider-controls">
@@ -137,19 +141,19 @@
   </main>
 
   <footer class="page-footer">
-      <div class="page-footer__contacts contacts">
-        <h2 class="visually-hidden">Контакты</h2>
-        <div class="contacts__text-wrapper container contacts__text-wrapper--white">
-          <p class="contacts__greeting">Приглашаем к сотрудничеству дилеров!</p>
-          <p class="contacts__address">ул. Большая
-            Конюшенная, д. 19/8
-            <span class="contacts__city">Санкт-Петербург</span>
-          </p>
-        </div>
-        <div class="contacts__map" id="map" aria-label="map">
-        </div>
+    <div class="page-footer__contacts contacts">
+      <h2 class="visually-hidden">Контакты</h2>
+      <div class="contacts__text-wrapper container contacts__text-wrapper--white">
+        <p class="contacts__greeting">Приглашаем к сотрудничеству дилеров!</p>
+        <p class="contacts__address">ул. Большая
+          Конюшенная, д. 19/8
+          <span class="contacts__city">Санкт-Петербург</span>
+        </p>
       </div>
-      <div class="page-footer__bottom container">
+      <div class="contacts__map" id="map" aria-label="map">
+      </div>
+    </div>
+    <div class="page-footer__bottom container">
       <div class="page-footer__logo">
         <a class="page-footer__logo-title" href="#">
           <img src="img/logo 2.svg" width="101" height="18" alt="Надпись Кэт энерджи">
