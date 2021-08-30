@@ -24,11 +24,15 @@
   text-align: center;
   text-transform: lowercase;
   color: $special-dark-grey;
-  background-color: $grey;
+  background-color: $basic-grey;
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
     background-color: $white;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $basic-grey;
   }
 }
 

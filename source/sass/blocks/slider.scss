@@ -53,6 +53,7 @@
 
     &--slim-cat {
       align-items: flex-end;
+      box-shadow: 400px 570px 0 400px $basic-grey;
 
       img {
         z-index: 1;
@@ -69,7 +70,7 @@
     }
 
     &--after {
-      box-shadow: 400px 590px 0 400px $grey;
+      box-shadow: 400px 590px 0 400px $basic-grey;
     }
   }
 

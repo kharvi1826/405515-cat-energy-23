@@ -6,23 +6,28 @@
   min-height: 480px;
 
   @media (min-width: $tablet-width) {
-    background-color: $white;
-    background-image: none;
+    background: $white;
+  }
+
+  @media (min-width:$desktop-width) {
+    background: transparent;
+    min-height: 560px;
   }
 }
 
 .intro__wrapper {
+  position: relative;
   padding-bottom: 22px;
   text-align: center;
   color: $white;
 
   @media (min-width: $tablet-width) {
-    position: relative;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0 30px;
+    padding: 0 20px;
     text-align: left;
+    color: $black;
   }
 }
 
@@ -45,7 +50,11 @@
     padding: 35px 0;
     font-size: 60px;
     color: $black;
-    padding: 0 20px;
+  }
+
+  @media (min-width:$desktop-width) {
+    margin-top: 34px;
+    padding-top: 50px;
   }
 }
 
@@ -61,6 +70,5 @@
     line-height: 22px;
     padding-bottom: 15px;
     color: $black;
-    padding: 0 20px;
   }
 }

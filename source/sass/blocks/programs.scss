@@ -2,6 +2,19 @@
   display: flex;
   box-sizing: border-box;
   margin: 20px auto;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    min-height: 372px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .programs__list {
@@ -11,20 +24,21 @@
 
 .programs__item {
   margin-bottom: 20px;
-  padding: 20px 20px 0;
   background-color: $basic-grey;
-
-  &:last-child {
-    margin-bottom: 9px;
-  }
 
   @media (min-width: $tablet-width) {
     margin-bottom: 30px;
 
 
-    &--pro {
+    &.program--pro {
       padding-right: 315px;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 40px;
+    padding: 25px 50px;
+    width: 570px;
   }
 }
 
@@ -41,7 +55,7 @@
   @media (min-width: $tablet-width) {
     padding: 22px 0;
     font-size: 36px;
-    line-height: 30px;
+    line-height: 1;
   }
 }
 
@@ -61,6 +75,11 @@
     line-height: 24px;
     color: $black;
     border-bottom: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 18px;
+    padding-bottom: 18px;
   }
 }
 
