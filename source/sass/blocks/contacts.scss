@@ -92,6 +92,8 @@
 
   @media (min-width:$tablet-width) {
     background-image: url("../img/map-tablet.png");
+    width: 768px;
+    height: 400px;
   }
 
   @media (min-width:$desktop-width) {
