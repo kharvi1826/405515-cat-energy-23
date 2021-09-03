@@ -48,15 +48,9 @@
   @media (min-width: $tablet-width) {
     padding: 0;
     margin-right: 30px;
+    border-bottom: none;
+    }
   }
-}
-
-.page-footer__logo-title {
-
-  @media (min-width: $tablet-width) {
-  border-bottom: none;
-  }
-}
 
 .page-footer__social {
   border-bottom: 1px solid $border-grey;

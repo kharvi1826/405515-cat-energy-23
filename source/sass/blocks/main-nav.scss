@@ -1,6 +1,7 @@
 .main-nav {
   border-top: 1px solid $light-grey;
   width: 100%;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     border-top: none;
@@ -11,13 +12,14 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    flex-direction: row;
+    justify-content: initial;
     flex-wrap: wrap;
-  }
 
   @media (min-width: $desktop-width) {
-    flex-basis: 570px;
     justify-content: flex-end;
   }
+}
 }
 
 .main-nav__item {

@@ -25,7 +25,6 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0 20px;
     text-align: left;
     color: $black;
   }
@@ -53,8 +52,9 @@
   }
 
   @media (min-width:$desktop-width) {
-    margin-top: 34px;
-    padding-top: 50px;
+    line-height: 60px;
+    margin-left: 100px;
+    width: 414px;
   }
 }
 
@@ -70,5 +70,20 @@
     line-height: 22px;
     padding-bottom: 15px;
     color: $black;
+  }
+
+  @media (min-width:$desktop-width) {
+    margin-left: 100px;
+  }
+}
+
+.intro__link {
+  font-size: 14px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 140px;
+    margin-left: 100px;
   }
 }

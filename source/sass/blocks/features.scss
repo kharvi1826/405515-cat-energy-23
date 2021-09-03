@@ -1,18 +1,3 @@
-.features {
-  margin: 0 auto;
-}
-
-.features__wrapper {
-
-  @media (min-width: $tablet-width) {
-    max-width: 768px;
-  }
-
-  @media (min-width: $desktop-width) {
-    max-width: 1300px;
-  }
-}
-
 .features__title {
   margin: 0;
   font-family: $oswald;
@@ -43,10 +28,53 @@
   margin: 20px 0;
 
   @media (min-width: $tablet-width) {
+    position: relative;
     flex-direction: column;
     align-items: flex-start;
+    margin: 37px auto 38px;
+    padding: 0 40px 60px;
+    flex: 0 0 250px;
+    counter-increment: feature_num;
+    z-index: 0;
+
+    &:nth-of-type(2n-1) {
+      margin-left: 0;
+      padding-left: 0;
+    }
+
+    &::after {
+      content: counter(feature_num);
+      position: absolute;
+      top: -40px;
+      right: 45px;
+      font-size: 280px;
+      color: $basic-grey;
+      z-index: -1;
+    }
+
+    &:first-child::after {
+      right: 60px;
+    }
   }
-}
+
+    &::before {
+      content: "";
+      flex-shrink: 0;
+      margin-right: 20px;
+      width: 60px;
+      height: 60px;
+      background-color: $green;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 50px;
+
+      @media (min-width: $tablet-width) {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 30px;
+      }
+    }
+  }
 
 .feature__text {
   margin: 0;

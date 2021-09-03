@@ -40,6 +40,7 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     padding-top: 20px;
@@ -51,14 +52,20 @@
   }
 }
 
-.page-header--index {
+.page-header--navigation { //добавила стили контейнера для планшета и десктопа//
 
   @media (min-width: $tablet-width) {
     margin: 0 auto;
     padding: 0 30px;
-    flex-direction: column;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    width: 768px;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    padding: 0 40px;
+    width: 1440px;
+    box-sizing: border-box;
   }
 }
 

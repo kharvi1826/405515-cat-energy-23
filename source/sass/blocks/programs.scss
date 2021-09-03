@@ -20,6 +20,7 @@
 .programs__list {
   @include reset-list ();
   background-color: $white;
+  display: flex;
 }
 
 .programs__item {
@@ -28,11 +29,6 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 30px;
-
-
-    &.program--pro {
-      padding-right: 315px;
-    }
   }
 
   @media (min-width: $desktop-width) {
