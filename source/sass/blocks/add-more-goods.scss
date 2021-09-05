@@ -13,7 +13,8 @@
 }
 
 .add-more-goods__list {
-  @include reset-list;
+
+  @include reset-list ();
   margin-bottom: 39px;
 }
 
@@ -44,7 +45,7 @@
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
-  color: $darkgrey;
+  color: $special-dark-grey;
 }
 
 .additional-product__price {

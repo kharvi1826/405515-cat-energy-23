@@ -1,0 +1,106 @@
+.page-header {
+  position: relative;
+  min-height: 65px;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  justify-content: center;
+  background-color: $white;
+  text-transform: uppercase;
+
+  @media (min-width: $desktop-width) {
+    &--background {
+      z-index: 0;
+    }
+
+    &::before {
+      position: absolute;
+      z-index: -1;
+      content: "";
+      top: 0;
+      right: 0;
+      bottom: -540px;
+      left: calc(50% + 40px);
+      background-color: $green;
+      background-image: url("../img/index-background-desktop1.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: right center;
+    }
+  }
+}
+
+.page-header__wrapper {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 52px;
+  }
+}
+
+.page-header--navigation { //добавила стили контейнера для планшета и десктопа//
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    padding: 0 30px;
+    width: 768px;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    padding: 0 40px;
+    width: 1440px;
+    box-sizing: border-box;
+  }
+}
+
+.page-header__logo {
+  height: 45px;
+  box-sizing: content-box;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.page-header__logo-img {
+  width: 33px;
+  height: 38px;
+
+  @media (min-width: $tablet-width) {
+    width: 173px;
+    height: 59px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    height: 60px;
+  }
+}
+
+.page-header__logo-title {
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}

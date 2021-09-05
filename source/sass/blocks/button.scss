@@ -1,0 +1,58 @@
+.button {
+  display: block;
+  min-height: 40px;
+  text-align: center;
+  padding: 10px 20px;
+  color: $white;
+  line-height: 20px;
+  background-color: $green;
+  width: 100%;
+  box-sizing: border-box;
+  font-weight: 400;
+
+  &:hover {
+    background-color: $dark-green;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  @media (min-width:$tablet-width) {
+    position: absolute;
+    top: 140px;
+    left: 6px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 244px;
+    height: 54px;
+  }
+
+  &--grey {
+    color: $black;
+    background-color: $grey;
+    max-width: 480px;
+    min-width: 280px;
+    margin: 0 auto;
+    width: 100%;
+
+    &:hover {
+      background-color: $light-grey;
+      color: $green;
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+    }
+
+    @media (min-width:$tablet-width) {
+      min-width: 248px;
+    }
+
+    @media (min-width:$desktop-width) {
+      min-width: 169px;
+    }
+  }
+}

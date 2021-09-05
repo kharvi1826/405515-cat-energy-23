@@ -1,11 +1,22 @@
 .copyright {
   box-sizing: content-box;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+  }
 }
 
 .copyright__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   font-family: "Arial", sans-serif;
   text-decoration: none;
-  color: $darkgrey;
+  color: $special-dark-grey;
   text-transform: none;
 
   &:hover .copyright__logo {
@@ -20,5 +31,6 @@
 .copyright__logo {
   width: 27px;
   height: 34px;
-  color: #666666;
+  margin-left: auto;
+  color: $special-grey2;
 }
