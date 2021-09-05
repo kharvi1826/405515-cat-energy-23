@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>HTML Academy: Кэт энерджи - Каталог продукции</title>
+  <title>HTML Academy: Кэт энерджи</title>
   <link rel="preload" href="fonts/oswaldregular.woff2">
   <link rel="preload" href="fonts/oswaldmedium.woff2">
   <link rel="stylesheet" href="css/style.css">
@@ -12,18 +12,21 @@
 </head>
 
 <body class="page__body">
-  <header class="page-header">
-    <div class="page-header__wrapper">
+  <header class="page-header page-header--background">
+    <div class="page-header__wrapper container">
       <a class="page-header__logo" href="#">
-        <img src="img/logo-mobile.png" width="33" height="38" alt="Логотип сайта Кэт энерджи">
+        <img class="page-header__logo-img" src="img/logo-mobile.png" width="33" height="38"
+          alt="Логотип сайта Кэт энерджи">
       </a>
       <a class="page-header__logo-title" href="#">
-        <img src="" width="101" height="18" alt="Надпись Cat energy">
+        <img src="img/logo 2.svg" width="101" height="18" alt="Надпись Cat energy">
       </a>
+      <button class="page-header__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+    </div>
+    <div class="page-header--navigation">
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a class="main-nav__link" href="index.html">Главная</a>
@@ -41,7 +44,7 @@
   <main class="page-main">
     <h1 class="visually-hidden">Магазин фитнесс-питания для котов Кэт энерджи</h1>
     <section class="catalog">
-      <div class="catalog__wrapper">
+      <div class="catalog__wrapper container">
         <h2 class="catalog__title">Каталог продукции</h2>
         <ul class="catalog__list">
           <li class="catalog__item product">
@@ -232,21 +235,21 @@
   </main>
 
   <footer class="page-footer">
-    <div class="page-footer__wrapper">
-      <div class="page-footer__contacts contacts">
-        <h2 class="visually-hidden">Контакты</h2>
-        <div class="contacts__text-wrapper contacts__text-wrapper--white">
-          <p class="contacts__greeting">Приглашаем к сотрудничеству дилеров!</p>
-          <p class="contacts__address">ул. Большая
-            Конюшенная, д. 19/8
-            <span class="contacts__city">Санкт-Петербург</span>
-          </p>
-        </div>
-        <div class="contacts__map" id="map" aria-label="map">
-        </div>
+    <div class="page-footer__contacts contacts">
+      <h2 class="visually-hidden">Контакты</h2>
+      <div class="contacts__text-wrapper container contacts__text-wrapper--white">
+        <p class="contacts__greeting contacts__part">Приглашаем к сотрудничеству дилеров!</p>
+        <p class="contacts__address contacts__part">ул. Большая
+          Конюшенная, д. 19/8
+          <span class="contacts__city">Санкт-Петербург</span>
+        </p>
       </div>
+      <div class="contacts__map" id="map" aria-label="map">
+      </div>
+    </div>
+    <div class="page-footer__bottom container">
       <div class="page-footer__logo">
-        <a class="page-footer__logo-link" href="#">
+        <a class="page-footer__logo-title" href="#">
           <img src="img/logo 2.svg" width="101" height="18" alt="Надпись Кэт энерджи">
         </a>
       </div>
@@ -275,13 +278,12 @@
         <a class="copyright__link" href="https://htmlacademy.ru">
           HTML Academy
         </a>
-        <a class="copyright__link" href="https://htmlacademy.ru">
-          <img class="copyright__logo" src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
+        <a class="copyright__logo" href="https://htmlacademy.ru">
+          <img src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
         </a>
       </div>
     </div>
   </footer>
-
 </body>
 
 </html>
