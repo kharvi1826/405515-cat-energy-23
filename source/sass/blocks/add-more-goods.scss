@@ -1,14 +1,45 @@
-.add-more-goods__title {
-  margin: 29px 0 33px;
-  position: relative;
-  font-size: 24px;
-  line-height: 1;
-  font-weight: 400;
-  background-image: linear-gradient(to bottom, transparent 0, transparent 13px, $green 13px, $green 16px, transparent 16px, transparent 100%);
+// .add-more-goods {
+//   padding: 0 20px;
+// }
+.add-more-goods__wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 
-  span {
-    display: inline-block;
-    background-color: #ffffff;
+.add-more-goods__title {
+  margin: 0;
+  position: relative;
+  padding-bottom: 34px;
+  padding-left: 20px;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    border-bottom: 2px solid $green;
+  }
+
+  &::before {
+    top: 39px;
+    left: 266px;
+
+    @media (min-width: $tablet-width) {
+      width: 100%;
+      top: 91px;
+      left: 410px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 100%;
+      top: 98px;
+      left: 373px;
+    }
   }
 }
 
@@ -16,9 +47,20 @@
 
   @include reset-list ();
   margin-bottom: 39px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 69px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .add-more-goods__item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   padding-bottom: 17px;
   border-bottom: 1px solid $border-grey;
   max-width: 634px;
@@ -35,10 +77,20 @@
   line-height: 20px;
   font-weight: 300;
   text-transform: uppercase;
-  color: #222222;
+
+  @media (min-width: $tablet-width) {
+    margin: 10px 0 10px;
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 32%;
+  }
 }
 
 .additional-product__info {
+  display: flex;
+  justify-content: space-between;
   width: 100%;
   margin-top: 0;
   margin-bottom: 11px;
@@ -46,15 +98,51 @@
   font-size: 14px;
   line-height: 18px;
   color: $special-dark-grey;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    margin-top: 8px;
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 34%;
+  }
 }
 
 .additional-product__price {
+  flex-shrink: 0;
   width: 95px;
   text-align: right;
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+    width: 80px;
+    margin-right: 20px;
+  }
 }
 
 .additional-product__button {
   min-width: 280px;
   max-width: 768px;
   margin: 0 auto;
+  border: none;
+  text-decoration: none;
+  padding-top: 10px;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-family: "Oswald";
+  line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 15px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    flex: 0 0 245px;
+    min-width: 245px;
+  }
 }
