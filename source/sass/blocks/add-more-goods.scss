@@ -11,7 +11,7 @@
 .add-more-goods__title {
   margin: 0;
   position: relative;
-  padding-bottom: 34px;
+  padding-bottom: 19px;
   padding-left: 20px;
   font-size: 24px;
   line-height: 24px;
@@ -26,25 +26,42 @@
   }
 
   &::before {
-    top: 39px;
-    left: 266px;
+    top: 15px;
+    left: 258px;
 
     @media (min-width: $tablet-width) {
       width: 100%;
-      top: 91px;
+      top: 20px;
       left: 410px;
     }
 
     @media (min-width: $desktop-width) {
       width: 100%;
-      top: 98px;
+      top: 20px;
       left: 373px;
+    }
+  }
+
+  &::after {
+    @media (max-width: $mobile-width-only) {
+      display: none;
+    }
+
+    @media (min-width: $tablet-width) {
+      width: 100%;
+      top: 20px;
+      left: -708px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 100%;
+      top: 20px;
+      left: -1260px;
     }
   }
 }
 
 .add-more-goods__list {
-
   @include reset-list ();
   margin-bottom: 39px;
 
@@ -68,6 +85,23 @@
 
   &:first-child {
     border-top: 1px solid $border-grey;
+  }
+
+  @media (min-width: $tablet-width) {
+    max-width: 708px;
+    padding: 16px 36px 12px;
+    border-left: 1px solid $border-grey;
+    border-right: 1px solid $border-grey;
+    align-content: center;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 895px;
+    min-width: 895px;
+    padding: 15px 0 16px;
+    border-left: 0;
+    border-right: 0;
   }
 }
 
