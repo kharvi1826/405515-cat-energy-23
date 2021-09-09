@@ -1,6 +1,3 @@
-// .add-more-goods {
-//   padding: 0 20px;
-// }
 .add-more-goods__wrapper {
   @media (min-width: $desktop-width) {
     display: flex;
@@ -9,57 +6,38 @@
 }
 
 .add-more-goods__title {
-  margin: 0;
+  margin: 29px 0 33px;
   position: relative;
   padding-bottom: 19px;
   padding-left: 20px;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
+  background-image: linear-gradient(to bottom, transparent 0, transparent 13px, $green 13px, $green 16px, transparent 16px, transparent 100%);
 
-  &::after,
-  &::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    border-bottom: 2px solid $green;
+  span {
+    display: inline-block;
+    padding: 0 20px;
+    background-color: $white;
   }
 
-  &::before {
-    top: 15px;
-    left: 258px;
-
     @media (min-width: $tablet-width) {
-      width: 100%;
-      top: 20px;
-      left: 410px;
+      margin-top: 37px;
+      margin-bottom: 80px;
+      padding: 0 calc((100vw - 708px) / 2);
+      font-size: 36px;
+      background-image: linear-gradient(to bottom, transparent 0, transparent 22px, $green 22px, $green 25px, transparent 25px, transparent 100%);
+
+      span {
+        padding: 0 36px;
+      }
     }
 
     @media (min-width: $desktop-width) {
-      width: 100%;
-      top: 20px;
-      left: 373px;
+      margin-top: 45px;
+      padding: 0 calc((100vw - 1360px) / 2);
     }
   }
-
-  &::after {
-    @media (max-width: $mobile-width-only) {
-      display: none;
-    }
-
-    @media (min-width: $tablet-width) {
-      width: 100%;
-      top: 20px;
-      left: -708px;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 100%;
-      top: 20px;
-      left: -1260px;
-    }
-  }
-}
 
 .add-more-goods__list {
   @include reset-list ();
@@ -176,7 +154,6 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
-    flex: 0 0 245px;
     min-width: 245px;
   }
 }

@@ -3,30 +3,99 @@
   margin: 0;
   padding: 0;
 
+  &--cat-info {
+    padding: 10px 0;
+
+    @media (min-width: $tablet-width) {
+      padding: 30px 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-bottom: 0;
+    }
+  }
+
   &--choose-program {
-    outline: 1px solid $border-grey;
+    margin: 0 -20px;
+    padding: 9px 20px;
+    outline: 1px solid $special-grey;
+
+    @media (min-width: $tablet-width) {
+      margin: 25px -30px 77px 40px;
+      padding: 12px 30px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 48px 0 27px 80px;
+    }
   }
 }
 
 .form-section__title {
   position: relative;
   font-size: 24px;
-  line-height: 1;
-  font-weight: normal;
-  background-image: linear-gradient(to bottom, transparent 0, transparent 13px, $green 13px, $green 16px, transparent 16px, transparent 100%);
+  line-height: 26px;
+  font-weight: 400;
+  background-image: linear-gradient(to bottom, transparent 0, transparent 13px, $green 13px, $green 13px, transparent 16px, transparent 100%);
 
   span {
     display: inline-block;
-    background-color: #ffffff;
+    padding: 0 20px;
+    background-color: $white;
   }
 
-  &--extra {
-    margin-bottom: 40px;
+  @media (min-width: $tablet-width) {
+    margin: 62px 0 75px;
+    padding: 0 calc((100vw - 708px) / 2);
+    font-size: 36px;
+    background-image: linear-gradient(to bottom, transparent 0, transparent 22px, $green 22px, $green 25px, transparent 25px, transparent 100%);
+
+    span {
+      padding: 0 36px;
+    }
+
+    &--extra {
+      margin-bottom: 40px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 46px 0 60px;
+    padding: 0 calc((100vw - 1300px) / 2);
+
+    &--extra {
+      margin: 48px 0 40px;
+    }
+  }
+}
+
+.form-section--contacts {
+  padding-top: 26px;
+}
+.form-section--contacts .form-section__title {
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 46px;
   }
 }
 
 .form-section__field {
   margin: 14px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 16px 0;
+    padding: 0 40px;
+    padding-bottom: 4px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    padding-right: 0;
+    width: 570px;
+  }
 
   &--textarea {
     width: auto;
@@ -35,20 +104,34 @@
 
 .form-section__item {
   max-width: 100%;
+  display: flex;
+  align-items: center;
   font-size: 16px;
   line-height: 20px;
   font-weight: 300;
   text-transform: uppercase;
-  color: #222222;
+  color: $special-dark-grey;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .form-section__text,
 .form-section__input,
 .form-section__input::placeholder {
   font-family: $oswald;
-  line-height: 1.12;
+  line-height: 18px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    line-height: 30px;
+  }
+}
+
+.form-section__input--textarea::placeholder {
+  padding-top: 6px;
 }
 
 .form-section__text {
@@ -57,39 +140,169 @@
   line-height: 20px;
   font-weight: 300;
   text-transform: uppercase;
-  color: #222222;
+  color: $special-dark-grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 20px;
+  }
+}
+
+.form-section--cat-info .form-section__text {
+  margin-right: 15px;
 }
 
 .form-section__input {
   display: inline-block;
+  padding: 13px;
   height: 45px;
   min-width: 177px;
   color: $special-dark-grey;
-  border: 1px solid $border-grey;
+  border: 1px solid $special-grey;
   outline: none;
 
   &:hover {
-    //border-color: #bababa;
     border-color: $green;
   }
 
-  &:active,
+  &:active {
+    border-color: $special-grey;
+  }
   &:focus {
     border-color: $special-dark-grey;
-    box-shadow: inset 0 0 0 1px $special-dark-grey;
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 52px;
+    line-height: 30px;
+    padding: 10px 20px;
   }
 
   &--textarea {
     height: 150px;
     resize: none;
     font-family: $oswald;
+
+    @media (min-width: $tablet-width) {
+      height: 175px;
+      padding: 15px 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 16px;
+    }
+  }
+}
+
+.form-section__input-wrapper {
+  position: relative;
+  display: flex;
+  flex-grow: 1;
+
+  .form-section__input {
+    padding-right: 15px;
   }
 }
 
 .form-section__list {
   @include reset-list ();
+
+  &--checks {
+    @media (min-width: $tablet-width) {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding-left: 40px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 0;
+    }
+  }
 }
 
 .form-section__list-item {
   margin: 12px 0;
+}
+
+.form-section__list--checks .form-section__list-item {
+  @media (min-width: $desktop-width) {
+    width: 325px;
+    margin: 16px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    margin: 16px 0;
+  }
+}
+
+.form-section__text--radio,
+.form-section__text--checkbox {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  flex-grow: 1;
+  margin-right: 0;
+
+  input:disabled + &,
+  &.disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  &::before {
+    display: block;
+    content: "";
+    flex-shrink: 0;
+    margin-right: 15px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid $special-grey;
+    background-color: $white;
+    box-sizing: border-box;
+
+    @media (min-width: $tablet-width) {
+      margin-right: 20px;
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  &:hover::before {
+    border-color: $green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  input:focus + &::before {
+    border-color: $special-grey;
+  }
+}
+
+.form-section__text--radio::before {
+  border-radius: 50%;
+}
+
+.form-section__radio:checked + .form-section__text--radio::before {
+  background-image: radial-gradient($green 0, $green 6px, $white 7px, $white 100%);
+
+  @media (min-width: $tablet-width) {
+    background-image: radial-gradient($green 0, $green 9px, $white 10px, $white 100%);
+  }
+}
+
+.form-section__text--checkbox:active::before,
+.form-section__checkbox:checked + .form-section__text--checkbox::before {
+  background: url("../img/icon-tick.svg") no-repeat center;
+  background-size: 21px;
+}
+
+.form-section__checkbox:checked + .form-section__text--checkbox:active::before {
+  background-image: none;
 }

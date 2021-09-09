@@ -47,6 +47,10 @@
     opacity: 0.3;
   }
 
+  &--current {
+    border-bottom: 2px solid $green;
+  }
+
   @media (min-width:$tablet-width) {
     margin: 0 18px;
     padding: 10px 0;

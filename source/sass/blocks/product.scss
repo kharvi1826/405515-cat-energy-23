@@ -26,7 +26,6 @@
 
 .product__link-img {
   display: flex;
-  flex: 1 0 auto;
 
   @media (min-width: $tablet-width) {
     width: 100%;
@@ -39,12 +38,10 @@
   margin: 0 auto;
   min-width: 280px;
   max-width: 480px;
-  flex: 1 0 100%;
   z-index: 2;
 
   @media (min-width: $tablet-width) {
     min-width: 248px;
-    flex: auto;
   }
 
   @media (min-width: $desktop-width) {
