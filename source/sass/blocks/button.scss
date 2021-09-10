@@ -6,9 +6,13 @@
   color: $white;
   line-height: 20px;
   background-color: $green;
-  width: 100%;
+  max-width: 280px;
   box-sizing: border-box;
   font-weight: 400;
+  font-size: 16px;
+  font-family: $oswald;
+  text-transform: uppercase;
+  border: none;
 
   &:hover {
     background-color: $dark-green;
@@ -18,29 +22,25 @@
     color: rgba(255, 255, 255, 0.3);
   }
 
-  @media (min-width:$tablet-width) {
-    position: absolute;
-    top: 140px;
-    left: 6px;
-    font-size: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 244px;
-    height: 54px;
+  @media (min-width:$desktop-width) {
+    min-width: 169px;
   }
 
   &--grey {
     color: $black;
-    background-color: $grey;
+    background-color: $basic-grey;
     max-width: 480px;
     min-width: 280px;
     margin: 0 auto;
     width: 100%;
+    border: none;
+    cursor: pointer;
+    min-height: 40px;
+    text-transform: uppercase;
 
     &:hover {
       background-color: $light-grey;
-      color: $green;
+      color: $special-dark-grey;
     }
 
     &:active {

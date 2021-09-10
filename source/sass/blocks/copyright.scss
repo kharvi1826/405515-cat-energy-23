@@ -33,4 +33,8 @@
   height: 34px;
   margin-left: auto;
   color: $special-grey2;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 22px;
+  }
 }
