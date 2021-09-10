@@ -38,6 +38,7 @@
   top: 0;
   bottom: 0;
   width: 100%;
+  overflow: hidden;
 
   &--slim-cat {
     display: flex;
@@ -69,7 +70,7 @@
       overflow: visible;
     }
 
-    &--after {
+    &--slim-cat {
       box-shadow: 400px 590px 0 400px $basic-grey;
     }
   }
@@ -103,6 +104,7 @@
   justify-content: center;
   align-items: center;
   margin-top: 30px;
+  padding: 2px;
   z-index: 1;
 
   @media (min-width:$tablet-width) {
@@ -121,6 +123,7 @@
   text-align: center;
   text-transform: uppercase;
   color: $black;
+  cursor: pointer;
 
   @media (min-width:$tablet-width) {
     padding: 6px 0;
@@ -141,6 +144,7 @@
 .slider__scale {
   display: inline-flex;
   align-items: center;
+  padding: 4px 6px;
   width: 85px;
   height: 14px;
   border-radius: 6px;
@@ -149,6 +153,7 @@
   box-sizing: border-box;
 
   @media (min-width:$tablet-width) {
+    padding: 4px 0;
     width: 428px;
     height: 6px;
     background-color: $special-grey;

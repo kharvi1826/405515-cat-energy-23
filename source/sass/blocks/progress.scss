@@ -4,8 +4,9 @@
   align-items: center;
   margin: 0;
   flex-grow: 1;
+  position: relative;
 
-  & + & {
+  &.weight + &.time {
     margin-left: 32px;
 
     @media (min-width: $tablet-width) {
@@ -20,15 +21,20 @@
   bottom: 9px;
   font-family: $arial;
   font-size: 12px;
-  line-height: 26px;
+  line-height: 12px;
   text-align: center;
   text-transform: lowercase;
   color: $special-dark-grey;
-  background-color: $basic-grey;
+  background-color: $grey;
 
   @media (min-width: $tablet-width) {
+    padding: 0 6px;
     font-size: 14px;
     background-color: $white;
+
+    br {
+      display: none;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -38,8 +44,10 @@
 
 .progress__value {
   margin: 0;
+  padding: 15px 20px;
   min-width: 121px;
   font-size: 24px;
+  line-height: 24px;
   text-align: center;
   color: $black;
   text-transform: uppercase;
