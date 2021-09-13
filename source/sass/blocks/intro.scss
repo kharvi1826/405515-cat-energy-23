@@ -1,9 +1,13 @@
 .intro {
-  background-image: url("../img/index-background-mobile1.jpg");
+  background-image: url("../img/raster/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: top;
   background-size: 100%;
-  min-height: 480px;
+  // min-height: 480px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/raster/index-background-mobile@2x.jpg");
+  }
 
   @media (min-width: $tablet-width) {
     background: $white;
@@ -71,6 +75,38 @@
     padding-bottom: 25px;
   }
 }
+
+.intro__img-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: center;
+    order: 2;
+    width: 100%;
+  }
+}
+
+.intro__img {
+  margin: 0 auto;
+  margin-bottom: 2px;
+  height: auto;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -80px;
+    width: 709px;
+    height: 609px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 0;
+    left: 490px;
+    margin-top: 5px;
+    margin-bottom: 50px;
+    width: 552px;
+    height: 499px;
+  }
+}
+
 
 .intro__link {
   order: 1;

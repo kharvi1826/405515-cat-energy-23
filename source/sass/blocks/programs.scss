@@ -4,18 +4,12 @@
     padding-top: 40px;
   }
 }
-// .programs__wrapper {
-
-//   // @media (min-width: $desktop-width) {
-//   //   padding: 0;
-//   //   display: flex;
-//   //   flex-wrap: wrap;
-//   // }
-// }
 
 .programs__list {
   @include reset-list();
+}
 
+.programs__wrapper {
   @media (min-width: $desktop-width) {
     padding: 0;
     display: flex;
@@ -46,6 +40,7 @@
   @media (min-width: $desktop-width) {
     margin: 40px;
     padding: 25px 50px;
+    width: 570px;
 
     &:last-child {
       margin-bottom: 40px;
@@ -90,14 +85,14 @@
     width: 100%;
     height: 97%;
     top: 42.5%;
-    background: url("../img/icon-cat-slim.svg") no-repeat center;
+    background: url("../img/vector/icon-cat-slim.svg") no-repeat center;
   }
 
   &--pro::after {
     width: 135%;
     height: 95%;
     top: 50%;
-    background: url("../img/icon-cat-pro.svg") no-repeat center;
+    background: url("../img/vector/icon-cat-pro.svg") no-repeat center;
   }
 
   @media (min-width: $tablet-width) {

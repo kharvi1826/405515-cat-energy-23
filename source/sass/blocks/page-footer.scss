@@ -71,5 +71,6 @@
 }
 
 .page-footer__contacts {
-  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }

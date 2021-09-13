@@ -31,3 +31,46 @@
     }
   }
 }
+
+.social__link {
+  display: inline-block;
+  font-size: 0;
+  line-height: 0;
+
+  svg {
+    fill: $special-grey2;
+  }
+
+  &:hover svg {
+    fill: $green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &--vk svg {
+    @media (min-width: $tablet-width) {
+      width: 30px;
+      height: 16px;
+    }
+  }
+
+  &--ig svg {
+    width: 20px;
+
+    @media (min-width: $tablet-width) {
+      width: 23px;
+      height: 23px;
+    }
+  }
+
+  &--fb svg {
+    width: 12px;
+
+    @media (min-width: $tablet-width) {
+      width: 14px;
+      height: 28px;
+    }
+  }
+}

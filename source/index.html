@@ -5,21 +5,30 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
-  <link rel="preload" href="fonts/oswaldregular.woff2">
-  <link rel="preload" href="fonts/oswaldmedium.woff2">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/style.css.map">
+  <link rel="icon" href="favicon.ico" type="image/svg+xml">
 </head>
 
 <body class="page__body">
+
+  <div style="display: none">
+    <include src="build/img/vector/sprite.svg"></include>
+  </div>
   <header class="page-header page-header--background">
     <div class="page-header__wrapper container">
       <a class="page-header__logo" href="#">
-        <img class="page-header__logo-img" src="img/logo-mobile.png" width="33" height="38"
-          alt="Логотип сайта Кэт энерджи">
-      </a>
-      <a class="page-header__logo-title" href="#">
-        <img src="img/logo 2.svg" width="101" height="18" alt="Надпись Cat energy">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/vector/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/vector/logo-tablet.svg">
+          <img class="page-header__logo-img" src="img/vector/logo-mobile.svg" alt="Логотип Cat-Energy" width="33"
+            height="38">
+        </picture>
+        <svg class="page-header__logo-title" xmlns="http://www.w3.org/2000/svg" width="101" height="18" aria-label="Cat Energy">
+          <use xlink:href="#logo-mobile-header"></use>
+        </svg>
       </a>
       <button class="page-header__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
@@ -48,8 +57,14 @@
         <h2 class="intro__content intro__title">Функциональное<br>питание для котов</h2>
         <p class="intro__content intro__lead">Занялся собой? Займись котом!</p>
         <div class="intro__background">
-          <img class="intro__img" src="img/index-can-mobile1.png" alt="Упаковка основного продукта" width="280"
-            height="270">
+          <picture class="intro__img-wrapper">
+            <source media="(min-width: 1440px)"
+              srcset="img/raster/index-can-desktop@1x.png 1x, img/raster/index-can-desktop@2x.png 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/raster/index-can-tablet@1x.jpg 1x, img/raster/index-can-tablet@2x.jpg 2x">
+            <img class="intro__img" src="img/raster/index-can-mobile@1x.png"
+              srcset="img/raster/index-can-mobile@2x.png 2x" alt="Упаковка основного продукта" width="280" height="270">
+          </picture>
         </div>
         <a class="intro__content intro__link button" href="form.html">Подобрать программу</a>
       </div>
@@ -129,10 +144,27 @@
           <input type="radio" id="fat-cat" class="slider__fat-cat visually-hidden" name="image-toggle">
           <input type="radio" id="slim-cat" class="slider__slim-cat visually-hidden" name="image-toggle">
           <div class="slider__images">
-            <img class="slider__image slider__image--fat-cat" src="img/before-mobile1.png" width="311" height="232"
-              alt="Толстый кот">
-            <img class="slider__image slider__image--slim-cat" src="img/after-desktop.png" width="311" height="232"
-              alt="Стройный кот">
+            <div class="slider__image slider__image--fat-cat">
+              <picture>
+                <source media="(min-width: 1440px)"
+                  srcset="img/raster/before-desktop@1x.png 1x, img/raster/before-desktop@2x.png 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/raster/before-tablet@1x.png 1x, img/raster/before-tablet@2x.png 2x">
+                <img src="img/raster/before-mobile@1x.png" srcset="img/raster/before-mobile@2x.png 2x" width="320"
+                  height="240" alt="Толстый кот">
+              </picture>
+            </div>
+
+            <div class="slider__image slider__image--slim-cat">
+              <picture>
+                <source media="(min-width: 1440px)"
+                  srcset="img/raster/after-desktop@1x.png 1x, img/raster/after-desktop@2x.png 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/raster/after-tablet@1x.png 1x, img/raster/after-tablet@2x.png 2x">
+                <img src="img/raster/after-mobile@1x.png" srcset="img/raster/after-mobile@2x.png 2x" width="320"
+                  height="240" alt="Стройный кот">
+              </picture>
+            </div>
           </div>
           <div class="slider-controls">
             <label for="fat-cat" class="slider__button slider__button--fat-cat">Было</label>
@@ -151,7 +183,7 @@
     <div class="page-footer__contacts contacts">
       <h2 class="visually-hidden">Контакты</h2>
       <div class="contacts__text-wrapper contacts__text-wrapper--white">
-        <p class="contacts__greeting contacts__part">Приглашаем к сотрудничеству дилеров!</p>
+        <p class="contacts__greeting contacts__part">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
         <p class="contacts__address contacts__part">ул. Большая
           Конюшенная, д. 19/8
           <span class="contacts__city">Санкт-Петербург</span>
@@ -163,36 +195,44 @@
     <div class="page-footer__bottom container">
       <div class="page-footer__logo">
         <a class="page-footer__logo-title" href="#">
-          <img src="img/logo 2.svg" width="128" height="24" alt="Надпись Кэт энерджи">
+          <svg xmlns="http://www.w3.org/2000/svg" width="128" height="24" aria-label="Cat Energy">
+            <use xlink:href="#logo-footer"></use>
+          </svg>
         </a>
       </div>
       <div class="page-footer__social social">
         <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link" href="#">
-              <span class="visually-hidden">В контакте</span>
+            <a class="social__link social__link--vk" href="https://vk.com/htmlacademy" target="_blank" aria-label="Переход на наш аккаунт в Вконтакте">Вконтакте
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" role="img">
+                <use xlink:href="#icon-vk-mobile"></use>
+              </svg>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="#">
-              <span class="visually-hidden">Инстаграм</span>
+            <a class="social__link social__link--ig" href="https://www.instagram.com/htmlacademy" target="_blank" aria-label="Переход на наш аккаунт в Инстаграмме">Instagram
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" role="img">
+                <use xlink:href="#icon-insta-mobile"></use>
+              </svg>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="#">
-              <span class="visually-hidden">Фейсбук</span>
+            <a class="social__link social__link--fb" href="https://www.facebook.com/htmlacademy" target="_blank" aria-label="Переход на наш аккаунт в Фейсбуке">Facebook
+              <svg xmlns="http://www.w3.org/2000/svg" width="10" height="19" role="img">
+                <use xlink:href="#icon-fb-mobile"></use>
+              </svg>
             </a>
           </li>
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
         <h2 class="visually-hidden">Разработчик</h2>
-        <a class="copyright__link" href="https://htmlacademy.ru">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" aria-label="Переход на страницу HTML Academy">
           HTML Academy
-        </a>
-        <a class="copyright__logo" href="https://htmlacademy.ru">
-          <img src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
+          <svg class="copyright__logo" xmlns="http://www.w3.org/2000/svg" width="26.94" height="34.09">
+            <use xlink:href="#logo-htmlacademy"></use>
+          </svg>
         </a>
       </div>
     </div>
