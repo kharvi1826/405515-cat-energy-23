@@ -55,6 +55,24 @@
   @media (min-width: $desktop-width) {
     padding-top: 52px;
   }
+
+  &.container {
+    width: 100%;
+
+    @media (min-width:$tablet-width) {
+      margin: 0 auto;
+      padding: 0 30px;
+      min-width: 768px;
+      box-sizing: border-box;
+    }
+
+    @media (min-width:$desktop-width) {
+      margin: 0 auto;
+      padding: 0 40px;
+      min-width: 1440px;
+      box-sizing: border-box;
+    }
+  }
 }
 
 .page-header--navigation { //добавила стили контейнера для планшета и десктопа//
@@ -89,6 +107,8 @@
 }
 
 .page-header__logo-img {
+  margin-right: 1040px;
+  margin-top: 40px;
   width: 33px;
   height: 38px;
 

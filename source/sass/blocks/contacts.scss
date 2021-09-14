@@ -12,7 +12,7 @@
     position: absolute;
     top: 0;
     bottom: 0;
-    padding-left: calc((100vw - 1360px) / 2 + 40px);
+    padding-left: calc((100vw - 1300px) / 2 + 40px);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -47,15 +47,6 @@
     z-index: 1;
     background-color: $white;
     max-width: 570px;
-  }
-}
-
-.contacts__part {
-  margin: 0;
-  flex-basis: 50%;
-
-  @media (min-width:$tablet-width) {
-    flex-basis: 160px;
   }
 }
 
